@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './containers/pages/App';
 import * as serviceWorker from './serviceWorker';
+
+import firebase from './config/firebase'; //import dari lokal
+
+
+// console.log('config firebase ===>',firebase);
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,3 +21,4 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+ 
